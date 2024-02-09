@@ -99,12 +99,8 @@ function continueButton() {
   console.log("Continue button clicked");
   const instructionScreen = document.getElementById('instruction-screen');
   instructionScreen.classList.add('fade-out');
-  // const audio = document.querySelector('audio');
-  const audio = document.getElementById('playback');
-  audio.play(); // Play audio when users interacts
+
   setTimeout(function() {
     instructionScreen.style.display = 'none';
-    // const audio = document.querySelector('audio');
-    // audio.play(); // Play audio when users interacts
     }, 500);
 }
