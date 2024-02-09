@@ -3,16 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const instructionScreen = document.getElementById('instruction-screen');
   instructionScreen.style.display = 'flex'; // Show screen initially
 
-  const continueButton = document.getElementById('continue-button');
-  continueButton.addEventListener('click', function() {
-    instructionScreen.classList.add('fade-out');
+  // const continueButton = document.getElementById('continue-button');
+  // continueButton.addEventListener('click', function() {
+  //   console.log("Continue button clicked");
+  //   instructionScreen.classList.add('fade-out');
 
-    setTimeout(function() {
-      instructionScreen.style.display = 'none';
-      const audio = document.querySelector('audio');
-      audio.play();
-    }, 500);
-  });
+  //   setTimeout(function() {
+  //     instructionScreen.style.display = 'none';
+  //     const audio = document.querySelector('audio');
+  //     audio.play(); // Play audio when users interacts
+  //   }, 500);
+  // });
 
   const envelope = document.querySelector('.envelope-wrapper');
   const letter = document.querySelector('.letter');
@@ -104,4 +105,16 @@ function yesButton() {
   pixelHeart.classList.add('pixel-heart'); // Add a class for styling
   envelope.appendChild(pixelHeart); // Append the heart to the envelope
   generateHearts();
+}
+
+function continueButton() {
+  console.log("Continue button clicked");
+  const instructionScreen = document.getElementById('instruction-screen');
+  instructionScreen.classList.add('fade-out');
+
+  setTimeout(function() {
+    instructionScreen.style.display = 'none';
+    const audio = document.querySelector('audio');
+    audio.play(); // Play audio when users interacts
+    }, 500);
 }
