@@ -188,11 +188,7 @@ body{
   /* position: fixed; */
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   margin: -100px;
-=======
-  margin: -150px;
->>>>>>> origin
 }
 
 .popup-message {
