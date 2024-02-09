@@ -185,6 +185,13 @@ body{
   font-family: 'Trebuchet MS', sans-serif;
 }
 
+.buttons-wrapper {
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  margin: -50px;
+}
+
 .popup-message {
   position: fixed;
   background-color: rgba(42, 40, 40, 0.778);
