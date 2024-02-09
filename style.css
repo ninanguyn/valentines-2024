@@ -185,10 +185,7 @@ body{
 }
 
 .buttons-wrapper {
-  /* position: fixed; */
-  display: flex;
-  flex-direction: column;
-  /* margin-top: -25px; */
+  display: grid;
 }
 
 .popup-message {
