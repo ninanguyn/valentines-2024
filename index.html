@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio loop>
+    <source src="./my-funny-valentine.mp3" type="audio/ogg">
+  </audio>
+  <div id="instruction-screen" class="instruction-screen">
+    <div class="instruction-content">
+      <!-- <h1>♡♡♡♡♡♡♡♡♡</h1> -->
+      <p>Nina has sent you a letter! Warning: there's background music. Turn
+      mute or wear headphones if you are in public. Click on the
+        stamp to unseal the envelope. Press continue whenever you're ready ツ</p>
+        <button id="continue-button" class="button">Continue</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Sup Sophie,</strong>
+            <p>
+              Happy Valentine's Day! I know we're not dating, but I really like
+              spending time with you and care about you a lot. Since we couldn't
+              hang out today, I decided to make you this card. It would mean a
+              lot to me if you said yes (but see what happens if you say no- I
+              dare you...)
+            </p>
+            <p>
+              Would you be my Valentine?
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="heart-stamp" src="heart-stamp.png" alt="heart stamp">
+    </div>
+  </div>
+  <div class="buttons">
+    <button id="yes-button" class="button" onclick="yesButton()">Yes</button>
+    <button id="no-button" class="button" onclick = "noButton()">No</button>
+  </div>
+
+  <div id="message-0" class="popup-message">
+    She said no- don't hmu 👊😔
+  </div>
+  <div id="message-1" class="popup-message">
+    Ouch that hurt! I'll give you two more tries.
+  </div>
+  <div id="message-2" class="popup-message">
+    Saying no twice is so 😞. Are you gonna say no again :/
+  </div>
+  <div id="message-3" class="popup-message">
+    Pfft, please say yes because there won't be a fourth message 😭
+  </div>
+  <div id="message-4" class="popup-message">
+    Ok last one I'm serious :/
+  </div>
+
+  <div id="yay-screen" class="popup-message">
+    YAY 🤭, text me back now lol
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
