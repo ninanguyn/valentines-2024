@@ -96,7 +96,7 @@ function yesButton() {
   envelope.style.display = 'none';
   heart.style.display = 'none';
 
-  const buttonsContainer = document.querySelector('.buttons');
+  const buttonsContainer = document.querySelector('.buttons-wrapper');
   buttonsContainer.style.display = 'none';
 
   const pixelHeart = document.createElement('img');
