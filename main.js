@@ -42,16 +42,15 @@ function noButton() {
       break;
     case 4:
       messageID = 'message-4';
+      document.getElementById('no-button').style.display = 'none';
       break;
-    default:
-      messageID = 'message-0';
   }
   const popupMessage = document.getElementById(messageID);
   popupMessage.classList.add('show');
 
   setTimeout(function() {
     popupMessage.classList.remove('show');
-  }, 1000); // Set the timeout duration to 1500 milliseconds
+  }, 2000); // Set the timeout duration to 1500 milliseconds
 }
 
 function createHeart() {
