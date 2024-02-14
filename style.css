@@ -6,7 +6,6 @@
   --envelope-cover: #f5c9e8;
   --shadow-color: rgba(0,0,0,0.2);
   --txt-color: #444;
-  /* --heart-color: rgb(252,8,231); */
 }
 body{
   margin: 0;
@@ -18,8 +17,8 @@ body{
   align-items: center;
   justify-content: center;
   font-family: 'Trebuchet MS', sans-serif;
+  /* overflow-y: auto; */
 }
-
 /* CSS styles for the instruction screen */
 .instruction-screen {
   position: fixed;
@@ -115,7 +114,7 @@ body{
   right: 20%;
   bottom: 0;
   width: 54%;
-  height: 150%;
+  height: 155%;
   background: var(--primary);
   text-align: center;
   transition: all 1s ease-in-out;
